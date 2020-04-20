@@ -5,7 +5,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-
 public class ExactSameClassTest {
     private ExactSameClass p;
     @Before
@@ -38,4 +37,10 @@ public class ExactSameClassTest {
         p.updateScore(12);
         assertEquals(12, p.getScore());
     }
+
+    @Test
+    public void testGetPlayerId(){
+        assertEquals(1, p.getPlayerId());
+    }
+
 }

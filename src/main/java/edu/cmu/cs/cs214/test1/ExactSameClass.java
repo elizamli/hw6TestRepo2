@@ -32,13 +32,6 @@ public class ExactSameClass {
         score += points;
     }
 
-    void resetMeeples(){
-        meepleCount = INIT_MEEPLE_COUNT;
-    }
-    void resetScore(){
-        score  = 0;
-    }
-
     @Override
     public String toString(){
         return "id:" + playerId + " score:" + score;
